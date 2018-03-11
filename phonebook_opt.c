@@ -5,6 +5,7 @@
 
 #include "phonebook_opt.h"
 
+#define OPT
 /*  FILL YOUR OWN IMPLEMENTATION HERE! */
 entry *findName(char lastName[], entry *pHead)
 {
@@ -26,5 +27,5 @@ entry *append(char lastName[], entry *e)
     e = e->pNext;
     strcpy(e->lastName, lastName);
     e->pNext = NULL;
-    return NULL;
+    return e;
 }
